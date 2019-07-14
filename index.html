@@ -11,20 +11,25 @@
             overflow: hidden;
         }
         #footer {
-            height: 400px;
-            line-height: 30px;
+            height: 30px;
+            line-height: 20px;
             position: fixed;
-            bottom: 100px;
+            bottom: 0px;
             width: 100%;
             text-align: center;
-            color:#00FF00;
-        //background: #333;
-            color: #fff;
+            background: #333;
             font-family: Arial;
             font-size: 10px;
             letter-spacing: 1px;
         }
-      
+        #footerCode {
+            padding-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .outer{
+           width: 100%;
+}
         .animate {
             padding-left: 20px;
             font-size: 12px;
@@ -94,15 +99,21 @@
 
 
 <div class="outer">
+ <div  id="footerCode" class="inner">
+       
 
-    <div id="footer" class="inner">
         <img
                 src="https://1947477238.github.io/qmlw.png"
-                border="0"  height="200px" width="200px"/>
+                border="0"  height="100px" width="100px"/>
         <p style="color:#000000">扫码下载</p>
-        <p style="color:#FF0000;font-size: 30px;">由于ipa包目前放在内网上，所以目前只能连接公司Wi-Fi才能在线安装测试包</p>
+        <p style="color:#FF0000">由于ipa包目前放在内网上，所以目前只能连接公司Wi-Fi才能在线安装测试包</p>
 
-        <p style="color:#000000">&copy;2019 - 2019 penglei制作<p>
+    </div>
+ 
+    <div id="footer" class="inner" width="100%">
+       
+
+        <p style="color:#FFFFFF">&copy;2019 - 2019 penglei制作<p>
 
     </div>
 
