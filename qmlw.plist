@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://192.168.1.200/qmlw.ipa</string>
+					<string>http://192.168.1.200/iOS/CN/192/qmlw_CN_1.4.2_192.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -35,7 +35,7 @@
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>全民乐舞</string>
+				<string>全民乐舞内网包</string>
 			</dict>
 		</dict>
 	</array>
