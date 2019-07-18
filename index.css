@@ -1,12 +1,5 @@
 /* DaTouWang URL: www.datouwang.com */
-body {
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(cyan, #0041c2, #180029);
-}
+
 @keyframes swim {
   20% {
     transform: translateY(3em);
