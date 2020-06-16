@@ -28,22 +28,45 @@
 		</section>
 		<section class="p-ct transformNode-2d" style="height: 100%;">
 			<div class="translate-back" style="100%">
-				<div class="m-page m-fengye" data-page-type="info_pic3" data-statics="info_pic3" style="height:100%;">
-					<div class="page-con lazy-finish" data-position="50% 50%" data-size="cover" style="background-image: url(images/image1.png); background-size:100% 100%; height:100%;">
-						<!-- <img src="./images/pdd.svg" class="icon-image"> -->
+				<div class="m-page m-fengye total" data-page-type="info_pic3" data-statics="info_pic3" style="height:100%;">
+					<div class="page-con lazy-finish image1 " data-position="50% 50%" data-size="cover" style="background-image: url(images/image1.png); background-size:contain;">
+						<img src="./images/pdd.svg" class="icon-image">
 					</div>
 				</div>
-				<div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list" style="height:100%;">
-					<div class="page-con j-txtWrap lazy-finish" data-position="100% 100%" data-size="cover" style="background-image: url(images/image2.png); background-size:100% 100%; "></div>
+				<div class="m-page m-bigTxt f-hide total" data-page-type="bigTxt" data-statics="info_list" style="height:100%;">
+					<div class="page-con j-txtWrap lazy-finish images" data-position="100% 100%" data-size="cover" style="background-image: url(images/image2.png); background-size:contain; ">
+<!-- 						<img src="images/image2_tip1.png" class="image2_tip1">
+ -->						<!-- <img src="images/top_left.png"  class="img2_top" width="">
+						<img src="images/bottom_right.png" class="img2_bottom"> -->
+						<!-- <div class="img2_tip">
+							为什么选择票多多
+						</div>
+						<div class="image2_content">
+							<div >
+								<img src="images/image2_tip1.png" >
+							</div>
+							<div class="title">
+								<div class="main_title">
+									旅游圈人脉王
+								</div>
+								<div class="less_title">
+									三年以上旅游行业经验
+								</div>
+								<div class="less_title">
+									在当地有丰富资源
+								</div>
+							</div>
+						</div> -->
+					</div>
 				</div>
-				<div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list" style="height:100%;">
-					<div class="page-con j-txtWrap lazy-finish" data-position="100% 100%" data-size="cover" style="background-image: url(images/image3.png); background-size:100% 100%; "></div>
+				<div class="m-page m-bigTxt f-hide total" data-page-type="bigTxt" data-statics="info_list" style="height:100%;">
+					<div class="page-con j-txtWrap lazy-finish images" data-position="100% 100%" data-size="cover" style="background-image: url(images/image3.png); background-size:contain; "></div>
 				</div>
-				<div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list" style="height: 100%;">
-					<div class="page-con j-txtWrap lazy-finish" data-position="100% 100%" data-size="cover" style="background-image: url(images/image4.png); background-size:100% 100%; "></div>
+				<div class="m-page m-bigTxt f-hide total" data-page-type="bigTxt" data-statics="info_list" style="height: 100%;">
+					<div class="page-con j-txtWrap lazy-finish images" data-position="100% 100%" data-size="cover" style="background-image: url(images/image4.png); background-size:contain; "></div>
 				</div>
-				<div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list" style="height: 100%;">
-					<div class="page-con j-txtWrap lazy-finish" data-position="100% 100%" data-size="cover" style="background-image: url(images/image5.png); background-size:100% 100%; ">
+				<div class="m-page m-bigTxt f-hide total" data-page-type="bigTxt" data-statics="info_list" style="height: 100%;">
+					<div class="page-con j-txtWrap lazy-finish images" data-position="100% 100%" data-size="cover" style="background-image: url(images/image5.png); background-size:contain;  ">
 
 						<img src="./images/pdd.svg" class="icon-image">
 						<div id="app">
@@ -74,7 +97,7 @@
 								<van-popup v-model="show" position="bottom">
 									<van-area title="请选择加盟城市" :area-list="areaList" columns-num="2" @confirm="selectCity" @cancel="cancelCity" />
 								</van-popup>
-								<van-button round type="info" size="large" style="margin-top:1.25rem;" native-type="submit" disabled="isDisabled">提交申请</van-button>
+								<van-button round type="info" size="large" style="margin-top:1.25rem;" native-type="submit" v-bind:disabled="isDisabled">提交申请</van-button>
 							</van-form>
 						</div>
 
@@ -108,7 +131,7 @@
 			iphonePattern: new RegExp("^[1][3-8][0-9]{9}$"),
 			emailPattern: /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/,
 			selectCityInfo: [],
-			selectTitle: '123',
+			selectTitle: '',
 			isDisabled: true,
 		},
 		methods: {
@@ -117,25 +140,59 @@
 			},
 			selectCity(item) {
 				this.selectCityInfo = item;
-				this.selectTitle = item[0].name + item[1].name;
+				this.selectTitle = item[0].name+"-" + item[1].name;
 				this.show = false;
-				console.log(44, item)
+				
 			},
 			cancelCity() {
 				this.show = false;
 			},
 			onSubmit(values) {
 				
-				
-				console.log('submit', values);
+           var postData = {
+               "CityName": this.selectCityInfo[1].name,
+               "Name": this.name,
+			   "Phone":this.phone,
+			   "Mail":this.email,
+			   "Remark":this.message.length>0? this.message:"",
+			   };
+         
+           var xhr = new XMLHttpRequest();
+           xhr.open("POST", "http://www.hxrhome3.com:9092/User/PartnerCreate", true);
+           xhr.setRequestHeader("Content-type","application/json");
+           xhr.onreadystatechange = function(){
+               var XMLHttpReq = xhr;
+			    console.log(XMLHttpReq);
+               if (XMLHttpReq.readyState == 4&&XMLHttpReq.status == 200) {
+                       var text = XMLHttpReq.responseText;
+					   let result =  JSON.parse(text);
+                       console.log("result",result);
+					   if(result.isSuccess) {
+						   vant.Toast('提交申请成功!');
+						    window.setTimeout(function() {
+						   window.location.reload()			   
+						   },1500)
+					   } else {
+						   vant.Toast('申请失败,请稍后重试');
+
+					   }
+                   } else {
+					   vant.Toast('申请失败,请稍后重试');
+				   }
+           };
+           xhr.send(JSON.stringify(postData));
 			},
 			adjutyInfo() {
 				let phone = this.phone.replace(/\s*/g, "");
-				let email = this.phone.replace(/\s*/g, "");
+				let email = this.email.replace(/\s*/g, "");
 				let name = this.name.replace(/\s*/g, "");
+				console.log(phone,email,name,this.selectCityInfo.length);
 				if (phone.length > 0 && email.length > 0 && name.length >0 && this.selectCityInfo.length>0) {
 					this.isDisabled =false;
+				} else {
+					this.isDisabled = true;
 				}
+				
 			}
 		},
 		watch: {
@@ -180,7 +237,34 @@
 		z-index：100;
 		padding: 0.625rem 0.625rem;
 	}
-
+     .img2_top {
+		 position: absolute;
+		 top: 1.25rem;
+		 left: 9.375rem;
+	 }
+	 .img2_bottom {
+		 position: absolute;
+		 top: 4.25rem;
+		 left: 29.0625rem;
+	 }
+	 .img2_tip {
+		 font-size: 2.5rem;
+		 color: white;
+		 font-weight: 600;
+		 position: absolute;
+		 top: 2.1875rem;
+		 left: 10.625rem;
+	 }
+	 .image2_content {
+		 display: flex;
+		 fle;
+	 }
+	 .image2_tip1 {
+		 position: absolute;
+		 top: 18%;
+		 left: 7%;
+		 width:10.3125rem;
+ 	 }
 	input {
 		font-size: 1.125rem !important;
 
@@ -199,5 +283,16 @@
 	.unselect-sytle {
 		font-size: 1.125rem !important;
 		color: red;
+	}
+	.image1 {
+		background-color:#050411 ;
+		
+	}
+	.images {
+	
+		
+	}
+	.total {
+	background-image: linear-gradient(#0039b1, #2b51bf,#a962cd);
 	}
 </style>
