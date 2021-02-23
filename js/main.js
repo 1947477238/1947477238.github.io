@@ -234,7 +234,7 @@
                     wait: undefined, //消失后 => 炸裂  等待时间
                     color: undefined //烟花颜色
                 },
-                fireWords: '幻想|有一天|坐着摇晃的船|眼底是|苍茫的蓝｜一不小心|就和你|认识快一年',
+                fireWords: '希望|有一天|坐着摇晃的船|眼底是|苍茫的蓝|一不小心|就和你|认识快一年',
                 // hue:210 lightness 0
                 skyColor: 'hsla({hue}, 60%, {lightness}%, 0.2)',
                 fireOpt: {
@@ -242,7 +242,7 @@
                 },
 
                 //阶段四
-                titleWords: '不管是1还是2|都祝愿你|开心每一天',
+                titleWords: '唯-|愿你|开心每一天',
                 titleOpt: {
                     gap: 4,
                     size: 70, //最后字的大小
