@@ -214,7 +214,7 @@
                     color6: '#00ffff',
                     color7: '#fff'
                 },
-                dialogue: [{ type: 6, name: '老憨', txt: '突然发现我们原来也认识了有一段时间了。' }, { type: 6, name: '男子', txt: '很短，但岁月易逝，愿珍惜每一刻！' }, { type: 2, name: '公主', txt: '是啊。' }, { type: 6, name: '老憨', txt: '公主，快过年，我们去放烟花吧！' }, { type: 2, name: '公主', txt: '天还这么亮，现在放烟花也不好看。' }, { type: 2, name: '公主', txt: '再说你那有烟花吗？' }, { type: 6, name: '老憨', txt: '我当然有烟花啦。' }, { type: 6, name: '老憨', txt: '你那有打火机吗？' }, { type: 2, name: '公主', txt: '没有呀～' }, { type: 6, name: '老憨', txt: '那你是怎么点燃我的心的？' }, { type: 2, name: '公主', txt: '。。。' }, { type: 2, name: '公主', txt: '可是我的心还没有被你点燃呀。' }, { type: 6, name: '老憨', txt: '别慌，我去买个打火机先。' }, { type: 2, name: '公主', txt: '打火机可点不燃我的心。' }, { type: 6, name: '老憨', txt: '天快黑了，我要为你点燃整片天空，公主我会努力的。' }],
+                dialogue: [{ type: 6, name: '老憨', txt: '突然发现我们原来也认识了有一段时间了。' }, { type: 6, name: '老憨', txt: '很短，但岁月易逝，愿珍惜每一刻！' }, { type: 2, name: '公主', txt: '是啊。' }, { type: 6, name: '老憨', txt: '公主，快过年，我们去放烟花吧！' }, { type: 2, name: '公主', txt: '天还这么亮，现在放烟花也不好看。' }, { type: 2, name: '公主', txt: '再说你那有烟花吗？' }, { type: 6, name: '老憨', txt: '我当然有烟花啦。' }, { type: 6, name: '老憨', txt: '你那有打火机吗？' }, { type: 2, name: '公主', txt: '没有呀～' }, { type: 6, name: '老憨', txt: '那你是怎么点燃我的心的？' }, { type: 2, name: '公主', txt: '。。。' }, { type: 2, name: '公主', txt: '可是我的心还没有被你点燃呀。' }, { type: 6, name: '老憨', txt: '别慌，我去买个打火机先。' }, { type: 2, name: '公主', txt: '打火机可点不燃我的心。' }, { type: 6, name: '老憨', txt: '天快黑了，我要为你点燃整片天空，公主我会努力的。' }],
                 // 阶段二
                 sunset: 8000,
 
@@ -242,7 +242,7 @@
                 },
 
                 //阶段四
-                titleWords: '努力奋斗|愿公主|开心每一天',
+                titleWords: '往后余生|愿公主|开心每一天',
                 titleOpt: {
                     gap: 4,
                     size: 70, //最后字的大小
