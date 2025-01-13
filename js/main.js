@@ -214,7 +214,7 @@
                     color6: '#00ffff',
                     color7: '#fff'
                 },
-                dialogue: [{ type: 6, name: '男子', txt: '突然发现我们原来也认识了有一段时间了。' }, { type: 6, name: '男子', txt: '去年五月份就认识了！' }, { type: 2, name: '女子', txt: '呵呵，是啊。' }, { type: 6, name: '男子', txt: '快元宵节了，我们去放烟花吧！' }, { type: 2, name: '女子', txt: '天还这么亮，现在放烟花也不好看。' }, { type: 2, name: '女子', txt: '再说你那有烟花吗？' }, { type: 6, name: '男子', txt: '我当然有烟花啦。' }, { type: 6, name: '男子', txt: '你那有打火机吗？' }, { type: 2, name: '女子', txt: '没有呀～' }, { type: 6, name: '男子', txt: '那你是怎么点燃我的心的？' }, { type: 2, name: '女子', txt: '。。。' }, { type: 2, name: '女子', txt: '可是我的心还没有被你点燃呀。' }, { type: 6, name: '男子', txt: '别慌，我去买个打火机先。' }, { type: 2, name: '女子', txt: '打火机可点不燃我的心。' }, { type: 6, name: '男子', txt: '天快黑了，我要为你点燃整片天空，道个歉。' }],
+                dialogue: [{ type: 6, name: '老憨', txt: '突然发现我们原来也认识了有一段时间了。' }, { type: 6, name: '男子', txt: '很短，但岁月易逝，愿珍惜每一刻！' }, { type: 2, name: '公主', txt: '是啊。' }, { type: 6, name: '老憨', txt: '公主，快过年，我们去放烟花吧！' }, { type: 2, name: '公主', txt: '天还这么亮，现在放烟花也不好看。' }, { type: 2, name: '公主', txt: '再说你那有烟花吗？' }, { type: 6, name: '老憨', txt: '我当然有烟花啦。' }, { type: 6, name: '老憨', txt: '你那有打火机吗？' }, { type: 2, name: '公主', txt: '没有呀～' }, { type: 6, name: '老憨', txt: '那你是怎么点燃我的心的？' }, { type: 2, name: '公主', txt: '。。。' }, { type: 2, name: '公主', txt: '可是我的心还没有被你点燃呀。' }, { type: 6, name: '老憨', txt: '别慌，我去买个打火机先。' }, { type: 2, name: '公主', txt: '打火机可点不燃我的心。' }, { type: 6, name: '老憨', txt: '天快黑了，我要为你点燃整片天空，公主我会努力的。' }],
                 // 阶段二
                 sunset: 8000,
 
@@ -234,7 +234,7 @@
                     wait: undefined, //消失后 => 炸裂  等待时间
                     color: undefined //烟花颜色
                 },
-                fireWords: '希望|有一天|坐着摇晃的船|眼底是|苍茫的蓝|一不小心|就和你|认识快一年',
+                fireWords: '希望|有一天|坐着摇晃的船|眼底是|苍茫的蓝|想到最幸福的事|就是和你认识|从短到长|然后慢慢变老',
                 // hue:210 lightness 0
                 skyColor: 'hsla({hue}, 60%, {lightness}%, 0.2)',
                 fireOpt: {
@@ -242,7 +242,7 @@
                 },
 
                 //阶段四
-                titleWords: '唯-|愿你|开心每一天',
+                titleWords: '努力奋斗|愿公主|开心每一天',
                 titleOpt: {
                     gap: 4,
                     size: 70, //最后字的大小
